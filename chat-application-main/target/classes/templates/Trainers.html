@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Thymeleaf-trainer</title>
+</head>
+<body>
+
+<h2>About Trainers</h2>
+
+<div align="center"> 
+
+
+</div>
+
+<ul>
+    <li th:each="Trainers : ${Trainers}">
+        <span th:text="${Trainers.id}">Default</span>
+        <span th:text="${Trainers.name}">Default</span>
+    </li>
+</ul>
+<a th:href="@{/home}">Back</a>
+</body>
+</html>
